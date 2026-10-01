@@ -1,0 +1,7 @@
+schema_version: "1.0"
+landing:
+  mode: native
+  required_checks:
+    - ci
+release:
+  model: trunk
