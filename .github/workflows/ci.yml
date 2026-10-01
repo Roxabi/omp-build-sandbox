@@ -16,3 +16,6 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: trivial check
         run: test -f README.md
+      - name: hold the PR armed (kill window for #641)
+        if: github.event_name == 'pull_request'
+        run: sleep 150
